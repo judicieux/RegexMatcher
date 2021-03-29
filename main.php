@@ -14,31 +14,31 @@
 	<h4>Output: toronto</h4>
 	<?php
 
-	$solution = "/.(t).*(o).*(r).*(o).*(n).*(t).*(o)/";
+		$solution = "/.(t).*(o).*(r).*(o).*(n).*(t).*(o)/";
 
-	if (isset($_GET["regex"]) && preg_match("/^\/.+\/[a-z]*$/i", $_GET["regex"]) == TRUE) {
+		if (isset($_GET["regex"]) && preg_match("/^\/.+\/[a-z]*$/i", $_GET["regex"]) == TRUE) {
 
-		$output = "Bonjour txxxxxoxxxxxrxxxxxoxxxxxnxxxxxtxxxxxo, que fais-tu ?";
-		preg_match($_GET["regex"], $output, $matches, PREG_OFFSET_CAPTURE);
-		if (sizeof($matches) > 0) {
-			foreach ($matches as $data) {
-				foreach ($data as $value) {
-					$array[] = $value[0];
+			$output = "Bonjour txxxxxoxxxxxrxxxxxoxxxxxnxxxxxtxxxxxo, que fais-tu ?";
+			preg_match($_GET["regex"], $output, $matches, PREG_OFFSET_CAPTURE);
+			if (sizeof($matches) > 0) {
+				foreach ($matches as $data) {
+					foreach ($data as $value) {
+						$array[] = $value[0];
+					}
 				}
-			}
-			$match = trim(implode("", $array));
-			echo "<br>";
-			if (isset($match) && $match == "toronto") {
-				echo "<h2 style='color:#20FF33'>t0r0nt0_ch4ll{pCr3_R3g3X_1S_s0_N1c3}</h2>";
+				$match = trim(implode("", $array));
+				echo "<br>";
+				if (isset($match) && $match == "toronto") {
+					echo "<h2 style='color:#20FF33'>t0r0nt0_ch4ll{pCr3_R3g3X_1S_s0_N1c3}</h2>";
+				} else {
+					echo "<h2 style='color:red'>Match failed</h2>";
+				}
 			} else {
 				echo "<h2 style='color:red'>Match failed</h2>";
 			}
 		} else {
-			echo "<h2 style='color:red'>Match failed</h2>";
+			echo "<h2 style='color:red'>Ton entrée n'est pas une regex!</h2>";
 		}
-	} else {
-		echo "<h2 style='color:red'>Ton entrée n'est pas une regex!</h2>";
-	}
 
 	?>
 	<br>
@@ -49,13 +49,13 @@
 	</form>
 	<?php
 
-	if(!empty(isset($_POST['submit']))) {
-        if(isset($_POST['flag']) && $_POST['flag'] == "t0r0nt0_ch4ll{pCr3_R3g3X_1S_s0_N1c3}"){
-            echo "<h4 style='color:#20FF33'>Valide</h2>";     
-        } else {
-        	echo "<h4 style='color:red'>Invalide</h2>";
-        }
-    }
+		if(!empty(isset($_POST['submit']))) {
+	        if(isset($_POST['flag']) && $_POST['flag'] == "t0r0nt0_ch4ll{pCr3_R3g3X_1S_s0_N1c3}"){
+	            echo "<h4 style='color:#20FF33'>Valide</h2>";     
+	        } else {
+	        	echo "<h4 style='color:red'>Invalide</h2>";
+	        }
+	    }
 
 	?>
 </body>
