@@ -52,7 +52,6 @@
 	</form>
 	<h4 style='color:#20FF33'>
 	<?php
-
 		if(!empty(isset($_POST['submit']))) {
 	        if(isset($_POST['flag']) && $_POST['flag'] == "t0r0nt0_ch4ll{pCr3_R3g3X_1S_s0_N1c3}"){
 	            echo "Valide";  
@@ -64,7 +63,6 @@
 	        	echo "Invalide";
 	        }
 	    }
-
 	?>
 	</h4>
 </body>
