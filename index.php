@@ -12,6 +12,7 @@
 	<h2>I/O</h3>
 	<h4>Input: Bonjour txxxxxoxxxxxrxxxxxoxxxxxnxxxxxtxxxxxo, que fais-tu ?</h4>
 	<h4>Output: toronto</h4>
+	<h2 style='color:#20FF33'>
 	<?php
 
 		$solution = "/.(t).*(o).*(r).*(o).*(n).*(t).*(o)/";
@@ -27,37 +28,45 @@
 					}
 				}
 				$match = trim(implode("", $array));
+				$error = "Match failed";
 				echo "<br>";
 				if (isset($match) && $match == "toronto") {
-					echo "<h2 style='color:#20FF33'>t0r0nt0_ch4ll{pCr3_R3g3X_1S_s0_N1c3}</h2>";
+					echo "t0r0nt0_ch4ll{pCr3_R3g3X_1S_s0_N1c3}";
 				} else {
-					echo "<h2 style='color:red'>Match failed</h2>";
+					echo $error;
 				}
 			} else {
-				echo "<h2 style='color:red'>Match failed</h2>";
+				echo $error;
 			}
 		} else {
-			echo "<h2 style='color:red'>Ton entrée n'est pas une regex!</h2>";
+			echo "Ton entrée n'est pas une regex!";
 		}
 
 	?>
+	</h2>
 	<br>
 	<br>
 	<form method="POST">
 		<input type="text" name="flag" />
 		<input type="submit" name="submit" />
 	</form>
+	<h4 style='color:#20FF33'>
 	<?php
 
 		if(!empty(isset($_POST['submit']))) {
 	        if(isset($_POST['flag']) && $_POST['flag'] == "t0r0nt0_ch4ll{pCr3_R3g3X_1S_s0_N1c3}"){
-	            echo "<h4 style='color:#20FF33'>Valide</h2>";     
+	            echo "Valide";  
+	?>
+	</h4>
+	<h4 style='color:red'>
+	<?php   
 	        } else {
-	        	echo "<h4 style='color:red'>Invalide</h2>";
+	        	echo "Invalide";
 	        }
 	    }
 
 	?>
+	</h4>
 </body>
 </center>
 <style>
