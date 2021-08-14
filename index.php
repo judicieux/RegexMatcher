@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" src="css/style.css"/>
 </head>
-<style>
-	body {
-		background-color:black;
-		color:#007739;
-		font-family: Arial
-	}
-</style>
 <center>
 <body>
 	<h1>Regex matcher</h1>
