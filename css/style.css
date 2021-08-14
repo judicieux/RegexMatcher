@@ -4,6 +4,14 @@ body {
 	font-family: Arial
 }
 
-h4 {
+h4 .valide {
+	color:#20FF33
+}
+
+h4 .invalide {
+	color:red;
+}
+
+h2 .win {
 	color:#20FF33
 }
