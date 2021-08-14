@@ -14,7 +14,7 @@
 <body>
 	<h1>Regex matcher</h1>
 	<br>
-	<img src="https://i.skyrock.net/6596/84286596/pics/3121971371_1_3_2ffuRhko.gif"/>
+	<img src="assets/image.gif">
 	<br>
 	<h2>I/O</h3>
 	<h4>Input: Bonjour txxxxxoxxxxxrxxxxxoxxxxxnxxxxxtxxxxxo, que fais-tu ?</h4>
