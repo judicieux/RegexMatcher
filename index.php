@@ -54,18 +54,18 @@
 	<?php
 
 		if(!empty(isset($_POST['submit']))) {
-	        if(isset($_POST['flag']) && $_POST['flag'] == "t0r0nt0_ch4ll{pCr3_R3g3X_1S_s0_N1c3}"){
-	            echo "Valide";  
+			if(isset($_POST['flag']) && $_POST['flag'] == "t0r0nt0_ch4ll{pCr3_R3g3X_1S_s0_N1c3}") {
+			    echo "Valide";  
 
 	?>
 	</h4>
 	<h4 class="invalide">
 	<?php   
 
-	        } else {
-	        	echo "Invalide";
-	        }
-	    }
+			} else {
+				echo "Invalide";
+			}
+	    	}
 
 	?>
 	</h4>
