@@ -3,6 +3,13 @@
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 </head>
+<style>
+	body {
+		background-color:black;
+		color:#007739;
+		font-family: Arial
+	}
+</style>
 <center>
 <body>
 	<h1>Regex matcher</h1>
@@ -18,7 +25,6 @@
 		$solution = "/.(t).*(o).*(r).*(o).*(n).*(t).*(o)/";
 
 		if (isset($_GET["regex"]) && preg_match("/^\/.+\/[a-z]*$/i", $_GET["regex"]) == TRUE) {
-
 			$output = "Bonjour txxxxxoxxxxxrxxxxxoxxxxxnxxxxxtxxxxxo, que fais-tu ?";
 			preg_match($_GET["regex"], $output, $matches, PREG_OFFSET_CAPTURE);
 			if (sizeof($matches) > 0) {
@@ -52,26 +58,23 @@
 	</form>
 	<h4 style='color:#20FF33'>
 	<?php
+
 		if(!empty(isset($_POST['submit']))) {
 	        if(isset($_POST['flag']) && $_POST['flag'] == "t0r0nt0_ch4ll{pCr3_R3g3X_1S_s0_N1c3}"){
 	            echo "Valide";  
+
 	?>
 	</h4>
 	<h4 style='color:red'>
 	<?php   
+
 	        } else {
 	        	echo "Invalide";
 	        }
 	    }
+
 	?>
 	</h4>
 </body>
 </center>
-<style>
-	body {
-		background-color:black;
-		color:#007739;
-		font-family: Arial
-	}
-</style>
 </html>
