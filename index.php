@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-	<link rel="stylesheet" src="css/style.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
 </head>
 <center>
 <body>
