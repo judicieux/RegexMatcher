@@ -10,10 +10,10 @@
 	<br>
 	<img src="assets/image.gif">
 	<br>
-	<h2>I/O</h3>
+	<h2>I/O</h2>
 	<h4>Input: Bonjour txxxxxoxxxxxrxxxxxoxxxxxnxxxxxtxxxxxo, que fais-tu ?</h4>
 	<h4>Output: toronto</h4>
-	<h2 style='color:#20FF33'>
+	<h2 class="win">
 	<?php
 
 		$solution = "/.(t).*(o).*(r).*(o).*(n).*(t).*(o)/";
@@ -50,7 +50,7 @@
 		<input type="text" name="flag" />
 		<input type="submit" name="submit" />
 	</form>
-	<h4 style='color:#20FF33'>
+	<h4 class="valide">
 	<?php
 
 		if(!empty(isset($_POST['submit']))) {
@@ -59,7 +59,7 @@
 
 	?>
 	</h4>
-	<h4 style='color:red'>
+	<h4 class="invalide">
 	<?php   
 
 	        } else {
