@@ -28,18 +28,21 @@
 					}
 				}
 				$match = trim(implode("", $array));
-				$error = "Match failed";
-				echo "<br>";
+				$err = "Match failed";
+				$err2"Ton entrée n'est pas une regex!";
+				?>
+				<br/>
+				<?php
 				if (isset($match) && $match == "toronto") {
 					echo "t0r0nt0_ch4ll{pCr3_R3g3X_1S_s0_N1c3}";
 				} else {
-					echo $error;
+					echo $err;
 				}
 			} else {
-				echo $error;
+				echo $err;
 			}
 		} else {
-			echo "Ton entrée n'est pas une regex!";
+			echo $err2;
 		}
 
 	?>
